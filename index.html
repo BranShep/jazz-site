@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html ng-app='jazz'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/base.css">
+    <link rel="stylesheet" href="/css/styles.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <title>Utah Jazz</title>
+  </head>
+  <body ng-controller='homeCtrl'>
+    <header>
+      <nav class='mainNav'>
+        <img id='jazz-logo' src='/images/jazz_logo.png'>
+
+        <div class='mainNav-div'>
+            <div class='zions-bank'>
+              <p>SITE PRESENTED BY</p>
+              <!-- <h2>ZIONS BANK</h2> -->
+              <img id='zions-bank-img' src='/images/powered-by-logo.png'>
+            </div>
+
+
+            <ul class='mainNav-ul'>
+              <li class='dropdown'>
+                <a class='dropbtn' ng-mouseenter='showDrop=true' ng-mouseleave='showDrop=false'>Tickets</a>
+                <div class="dropdown-content-tickets" ng-show='showDrop' ng-mouseenter='showDrop=true' ng-mouseleave='showDrop=false'>
+                  <!-- <a href="#">Ticket Central</a>
+                  <a href="#">Ticket Plans</a>
+                  <a href="#">Slam Dunk Ticket Deal</a>
+                  <a href="#">Account Manager</a>
+                  <a href="#">Suites</a>
+                  <a href="#">Family Night</a> -->
+                  <div class='dropdown-column'>
+                      <a href="#">Ticket Central</a>
+                      <a href="#">Single-Game Tickets</a>
+                      <a href="#">Season Tickets</a>
+                  </div>
+                  <div class='dropdown-column'>
+                      <a href="#">Ticket Plans</a>
+                      <a href="#">Seating Map</a>
+                      <a href="#">Family Night</a>
+                  </div>
+                  <div class='dropdown-column'>
+                      <a href="#">Slamdunk Ticket Deal</a>
+                      <a href="#">Groups</a>
+                      <a href="#">Military & 1st Responders</a>
+                  </div>
+                  <div class='dropdown-column'>
+                      <a href="#">Account Manager</a>
+                      <a href="#">Lexus Club</a>
+                      <a href="#">Interform Club</a>
+                  </div>
+                  <div class='dropdown-column'>
+                      <a href="#">Suites</a>
+                      <a href="#">Flash Seats</a>
+                  </div>
+                </div>
+              </li>
+              <li><a class='dropbtn'>Schedule</a></li>
+              <li><a class='dropbtn'>Team</a></li>
+              <li><a class='dropbtn'>Fans</a></li>
+              <li><a class='dropbtn'>Video</a></li>
+              <li><a class='dropbtn'>Game Night</a></li>
+              <li><a class='dropbtn'>Community</a></li>
+              <li><a class='dropbtn'>Shop</a></li>
+            </ul>
+
+            <ul class='social-bar'>
+              <li class="socicon-facebook"></li>
+              <li class="socicon-twitter"></li>
+              <li class="socicon-googleplus"></li>
+              <li class="socicon-instagram"></li>
+            </ul>
+
+            <ul class='search-ul'>
+              <li id='search'>Search</li>
+              <li id='search-icon'><span class="glyphicon glyphicon-search"></span></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <div class="your-class">
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+    </div> -->
+
+    <ui-view></ui-view>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+          <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+          <!--ANGULAR ANGULAR -->
+
+          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+
+          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+          <!--UI ROUTER-->
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.14/angular-ui-router.js"></script>
+
+          <!--Slick Carousel-->
+
+          <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers/homeCtrl.js"></script>
+    <script src="/js/services/mainService.js"></script>
+    <script src="/js/routes.js"></script>
+  </body>
+</html>

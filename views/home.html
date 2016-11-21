@@ -1,0 +1,199 @@
+<main class='home-page'>
+  <div class='home-content-container'>
+    <section class='game-recap-section'>
+      <div class='game-score'>
+
+        <div class='game-score-logos'>
+          <img src='/images/full-jazz-logo.png'>
+          <h5>VS</h5>
+          <img src='/images/portland-logo.png'>
+        </div>
+
+        <div class='game-actual-score'>
+          <h4>Final</h4>
+          <div class='score'>
+            <h1 id='jazz-score'>104</h1>
+            <h1>113</h1>
+          </div>
+          <div class='game-tracker-button'>
+            <p>GAME TRACKER</p>
+          </div>
+        </div>
+
+        <div class='tv-listings'>
+          <div class='tv'>
+            <span>TV</span>
+            <a>TV LISTINGS</a>
+          </div>
+          <div class='ra'>
+            <span>RA</span>
+            <a>KZNS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='blue-out-section'>
+      <img id='blue-out-img' src='/images/blue-out.jpg'>
+      <div class='opening-night' ng-mouseenter='showFive=true; showContentFive=true' ng-mouseleave='showFive=false; showContentFive=false'>
+        <img src='/images/opening-night.png'>
+        <div class='view-full-post-big' ng-show='showFive'>
+        </div>
+        <div class='view-full-content-big' ng-show='showContentFive'>
+            <h1>VIEW FULL POST</h1>
+            <div class='share-this'>
+              <h1></h1>
+              <h3>SHARE THIS</h3>
+              <h1></h1>
+            </div>
+            <div class='social-circles'>
+              <div class='blue-circle-big'><i class="fa fa-facebook" style="font-size:24px"></i></div>
+              <div class='blue-circle-big'><i class="fa fa-google-plus" style="font-size:24px"></i></div>
+              <div class='blue-circle-big'><i class="fa fa-twitter" style="font-size:24px"></i></div>
+            </div>
+        </div>
+        <div class='title-big'>
+          <p>Opening Night!</p>
+        </div>
+      </div>
+      <div class='opening-night-right'>
+        <div class='trending-news-article' ng-mouseenter='showFour=true; showContentFour=true' ng-mouseleave='showFour=false; showContentFour=false'>
+          <img src='/images/on-sale.jpg'>
+          <div class='view-full-post' ng-show='showFour'>
+          </div>
+          <div class='view-full-content' ng-show='showContentFour'>
+              <h4>VIEW FULL POST</h4>
+              <div class='share-this'>
+                <h1></h1>
+                <h5>SHARE THIS</h5>
+                <h1></h1>
+              </div>
+              <div class='social-circles'>
+                <div class='blue-circle'><i class="fa fa-facebook" style="font-size:18px"></i></div>
+                <div class='blue-circle'><i class="fa fa-google-plus" style="font-size:18px"></i></div>
+                <div class='blue-circle'><i class="fa fa-twitter" style="font-size:18px"></i></div>
+              </div>
+          </div>
+          <div class='title'>
+            <p>Secure Your Tickets Today!</p>
+          </div>
+        </div>
+        <div class='trending-news-article' ng-mouseenter='showThree=true; showContentThree=true' ng-mouseleave='showThree=false; showContentThree=false'>
+          <img src='/images/home-opener.jpg'>
+          <div class='view-full-post' ng-show='showThree'>
+          </div>
+          <div class='view-full-content' ng-show='showContentThree'>
+              <h4>VIEW FULL POST</h4>
+              <div class='share-this'>
+                <h1></h1>
+                <h5>SHARE THIS</h5>
+                <h1></h1>
+              </div>
+              <div class='social-circles'>
+                <div class='blue-circle'><i class="fa fa-facebook" style="font-size:18px"></i></div>
+                <div class='blue-circle'><i class="fa fa-google-plus" style="font-size:18px"></i></div>
+                <div class='blue-circle'><i class="fa fa-twitter" style="font-size:18px"></i></div>
+              </div>
+          </div>
+          <div class='title'>
+            <p>Secure Your Tickets Today!</p>
+          </div>
+        </div>
+      </div>
+      <div class='more-news'>
+        <p>MORE NEWS</p>
+         <a id='right-arrow'>></a>
+      </div>
+    </section>
+    <section class='delta-section'>
+      <div class='delta'>
+        <h1></h1>
+        <img src='/images/delta.png'>
+        <h1></h1>
+      </div>
+      <div class='trending-news'>
+        <div class='trending-news-article' ng-repeat="video in trendingNews" ng-mouseenter='show=true; showContent=true' ng-mouseleave='show=false; showContent=false'>
+          <img src={{video.img}}>
+          <div class='view-full-post' ng-show='show'>
+          </div>
+          <div class='view-full-content' ng-show='showContent'>
+              <h4>VIEW FULL POST</h4>
+              <div class='share-this'>
+                <h1></h1>
+                <h5>SHARE THIS</h5>
+                <h1></h1>
+              </div>
+              <div class='social-circles'>
+                <div class='blue-circle'><i class="fa fa-facebook" style="font-size:18px"></i></div>
+                <div class='blue-circle'><i class="fa fa-google-plus" style="font-size:18px"></i></div>
+                <div class='blue-circle'><i class="fa fa-twitter" style="font-size:18px"></i></div>
+              </div>
+          </div>
+          <div class='title'>
+            <p>{{video.title}}</p>
+          </div>
+        </div>
+      </div>
+      <div class='more-news'>
+        <p>MORE NEWS</p>
+         <a id='right-arrow'>></a>
+      </div>
+      <!-- <video poser id='cvp_player' preload='none' src='http://nba.cdn.turner.com/nba/big/teams/jazz/2016/10/19/1476914407488-SMM-Open-870612_640x360_664m.mp4' style='width: 100%; height: 100%' controls></video> -->
+    </section>
+    <section class='delta-section'>
+      <div class='delta'>
+        <h1></h1>
+        <img src='/images/featured.png'>
+        <h1></h1>
+      </div>
+      <div class='trending-news'>
+        <div class='trending-news-article' ng-repeat="article in featuredNews" ng-mouseenter='showThis=true; showContentTwo=true' ng-mouseleave='showThis=false; showContentTwo=false'>
+          <img src={{article.img}}>
+          <div class='view-full-post' ng-show='showThis'>
+          </div>
+          <div class='view-full-content' ng-show='showContentTwo'>
+              <h4>VIEW FULL POST</h4>
+              <div class='share-this'>
+                <h1></h1>
+                <h5>SHARE THIS</h5>
+                <h1></h1>
+              </div>
+              <div class='social-circles'>
+                <div class='blue-circle'><i class="fa fa-facebook" style="font-size:18px"></i></div>
+                <div class='blue-circle'><i class="fa fa-google-plus" style="font-size:18px"></i></div>
+                <div class='blue-circle'><i class="fa fa-twitter" style="font-size:18px"></i></div>
+              </div>
+          </div>
+          <div class='title'>
+            <p>{{article.title}}</p>
+          </div>
+        </div>
+      </div>
+      <div class='more-news'>
+        <p>MORE NEWS</p>
+         <a id='right-arrow'>></a>
+      </div>
+      <!-- <video poser id='cvp_player' preload='none' src='http://nba.cdn.turner.com/nba/big/teams/jazz/2016/10/19/1476914407488-SMM-Open-870612_640x360_664m.mp4' style='width: 100%; height: 100%' controls></video> -->
+    </section>
+    <section class='delta-section'>
+      <div class='delta'>
+        <h1></h1>
+        <img src='/images/pulse.png'>
+        <h1></h1>
+      </div>
+      <div class='pulse-nav'>
+        <div class='pulse-nav-item'>
+          <p>ALL</p>
+        </div>
+        <div class='pulse-nav-item'>
+          <p>NEWS</p>
+        </div>
+        <div class='pulse-nav-item'>
+          <p>VIDEOS</p>
+        </div>
+        <div class='pulse-nav-item'>
+          <p>PHOTOS</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
